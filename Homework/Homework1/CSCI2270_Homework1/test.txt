@@ -1,0 +1,18 @@
+chicken, for sale, 60
+microwave, wanted, 201
+bike, for sale, 60
+bike, wanted, 50
+microwave, for sale, 200
+chicken, for sale, 25
+chicken, wanted, 25
+microwave, wanted, 10
+microwave, for sale, 2
+chicken, for sale, 100
+bike, wanted, 100
+chicken, for sale, 5
+truck, wanted, 1000
+bike, for sale, 50
+chicken, for sale, 5
+bike, for sale, 500
+chicken, for sale, 1
+chicken, for sale, 25
