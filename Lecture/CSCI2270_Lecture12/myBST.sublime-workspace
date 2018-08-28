@@ -1,0 +1,604 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"delete",
+				"deleteCityString"
+			],
+			[
+				"pre",
+				"previousCity"
+			],
+			[
+				"addCity",
+				"addCityPrevious"
+			],
+			[
+				"curr",
+				"curParent"
+			],
+			[
+				"Uni",
+				"uniqueCount"
+			],
+			[
+				"uni",
+				"uniqueCount"
+			],
+			[
+				"arra",
+				"arrayUniqueWords"
+			],
+			[
+				"unu",
+				"uniqueResults"
+			],
+			[
+				"arraA",
+				"arrayAllCount"
+			],
+			[
+				"un",
+				"uniqueResults"
+			],
+			[
+				"doubleArra",
+				"doubleArrayCounter"
+			],
+			[
+				"add",
+				"addStudentArray"
+			],
+			[
+				"print",
+				"printTopN"
+			],
+			[
+				"value",
+				"valueToInsert"
+			],
+			[
+				"linked",
+				"linkedlist"
+			],
+			[
+				"Garage",
+				"GarageItem"
+			],
+			[
+				"for",
+				"forv\tVector For Loop"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"ara",
+				"arrayOfGarageItems"
+			],
+			[
+				"array",
+				"arrayOfGarageItems"
+			],
+			[
+				"find",
+				"findItemIndex"
+			],
+			[
+				"empt",
+				"emptyIndex"
+			],
+			[
+				"ar",
+				"argc"
+			],
+			[
+				"quci",
+				"quicksort"
+			],
+			[
+				"quc",
+				"quicksort"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/Assignment3.cpp",
+			"settings":
+			{
+				"buffer_size": 7970,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/CommunicationNetwork.cpp",
+			"settings":
+			{
+				"buffer_size": 11920,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "#include <iostream>"
+			}
+		},
+		{
+			"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/CommunicationNetwork.h",
+			"settings":
+			{
+				"buffer_size": 817,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "#include <iostream>"
+			}
+		},
+		{
+			"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/message.txt",
+			"settings":
+			{
+				"buffer_size": 111,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "A liger it's pretty much my favorite animal. It's"
+			}
+		}
+	],
+	"build_system": "Packages/User/minGW-64-build.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/MinGW-w64.sublime-build",
+					""
+				],
+				[
+					"Packages/MinGW-w64.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/MinGW-w64.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/MinGW-64-sublime-build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/MinGW-64-sublime-build.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/MinGW-64-sublime-build.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/minGW-64-build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/minGW-64-build.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/minGW-64-build.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/test.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1_c.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1_b.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/Assignment3_1.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/CSCI2270_Homework2_Katrina_Siegfried.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz11/CSCI2270_Quiz11.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSC2720_Lecture12/recursion_test.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSC2720_Lecture12/bst.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSC2720_Lecture12/bst_class.h",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSC2720_Lecture12/main.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture11/CSCI2270_Lecture11.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz6/CSCI270_Quiz6_submitted.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Midterm/Midterm_Review.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture6/CSCI2270_Lecture6.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture7/CSCI2270_Lecture7.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Recitation/CSCI2270_Recitation1/CSCI2270_Recitation_Quiz.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture4/CSCI2270_Lecture4.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture3/CSCI2270_Lecture3.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Recitation/CSCI2270_Recitation1/CSCI2270_Recitation.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture2/CSCI2270_Lecture2_a/CSCI2270_Lecture2_a.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Midterm/Midterm_Q10.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Midterm/Midterm_Q9.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz10/CSCI227_Quiz10_submitted_correct.xt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz8/CSCI2270_Quiz8_submitted_correct",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz7/CSCI2270_Quiz7_submitted_correct",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz1/CSCI2270_Quiz1.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz5/CSCI2270_Quiz5_submitted.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz1/CSCI2270_Quiz1_submitted_correct",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz3_4SOLUTION/CSCI2270_Quiz3_4SOLUTION.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz4/CSCI2270_Quiz4_submitted.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz3_4SOLUTION/CSCI2270_Quiz3_submitted_correct",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz2/CSCI2270_Quiz2_submitted_halfcorrect",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/LinkedList_Example_Structure",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Recitation/CSCI2270_Recitation3/CSCI2270_Recitation3_Quiz.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Recitation/CSCI2270_Recitation2/CSCI2270_Recitation2_Quiz.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Midterm/Midterm_Review.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSC2720_Lecture12/bst_class.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz10/CSCI2270_Quiz10.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture10/CSCI2270_Lecture10.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1_simple.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/garageSale.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/ignoreWords.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/HungerGames_test.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/HungerGames_edit.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/ignoreWords_test.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/CSCI2270_Homework2_e.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/test.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/CSCI2270_Homework2.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework2/HungerGames_test",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz8/CSCI2270_Quiz8.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture9/CSCI2270_Lecture9.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI2270_Quiz7/CSCI2270_Quiz7.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI270_Spring8_NoClass/CSCI2270_Sprint8_NoClass.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Quiz/CSCI_Sprint8_NoClass.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/test.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_Lecture5/CSCI2270_Lecture5.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/functionTest.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1_KatrinaSiegfried.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/BubbleSortTest.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1_c.exe",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework1/CSCI2270_Homework1.exe",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Lecture/CSCI2270_QuickSortDemo/CSCI2270_QuickSortDemo.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Recitation2/CSCI2270_Recitation2_b.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Recitation2/CSCI2270_Recitation2.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Lecture6/TEST.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Lecture5/CSCI2270_Lecture5.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Lecture4/CSCI2270_Lecture4.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/test/test.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/CSCI2270_Lecture2/CSCI2270_Lecture2.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/PtrTest/PtrTest.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270_Lecture2.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/test.cpp",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/input.txt",
+		"/C/Users/katri.WINDOWS-I21LG7M/Desktop/Sublime_Files",
+		"/C/Users/katri.WINDOWS-I21LG7M/AppData/Roaming/Sublime Text 3/Packages/User/minGW-64-build.sublime-build",
+		"/C/Users/katri.WINDOWS-I21LG7M/AppData/Roaming/Sublime Text 3/Packages/User/MinGW-64-sublime-build.sublime-build",
+		"/C/Users/katri.WINDOWS-I21LG7M/AppData/Roaming/Sublime Text 3/Packages/MinGW-w64.sublime-build"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"new",
+			"mess",
+			"head",
+			"newCity",
+			"linkedList",
+			"arrayWords",
+			"’",
+			"ΓÇö",
+			"rco",
+			"cout",
+			"entire",
+			"5",
+			"wordLine",
+			"singleLine",
+			"wordLine",
+			"unique",
+			"uniqueCount",
+			"compareCount",
+			"50",
+			"sll",
+			"arrayofGarageItems[x]",
+			"arrayofGarageItems[j]",
+			"arrayofGarageItems[i]",
+			"findItem",
+			"findItemIndex",
+			"empty",
+			"bike",
+			"GarageSale"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sllUniqueWords",
+			"arrayUniqueWords",
+			"lineFromText",
+			"wordLine",
+			"compareWord",
+			"arrayOfGarageItems"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/Assignment3.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7967,
+								7967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/CommunicationNetwork.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2971,
+								2971
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <iostream>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1453.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/CommunicationNetwork.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								728,
+								707
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <iostream>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/katri.WINDOWS-I21LG7M/Desktop/SUBLIME_FILES/CSCI2270/Homework/CSCI2270_Homework3/message.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"auto_name": "A liger it's pretty much my favorite animal. It's",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/minGW-64-build.sublime-build",
+	"project": "myBST.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

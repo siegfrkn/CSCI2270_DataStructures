@@ -1,0 +1,196 @@
+//
+//  test1.cpp
+//
+//
+//  Created by cami on 6/15/18.
+//
+//
+
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <string>
+#include <typeinfo>
+
+using namespace std;
+
+
+struct Node {
+    
+    int k;
+    Node *n;
+    
+};
+
+
+
+// Define class that is our linked list
+
+class LinkedList {
+    
+public:
+    Node *head = new Node;
+    
+    LinkedList(){};
+    
+    LinkedList(int value) {
+        
+        head->k = value;
+        head->n = NULL;
+    }
+    
+};
+
+
+
+void addNode(LinkedList *linkedList, int valueToInsert)
+{
+    
+    // Create new node
+    Node *newNode = new Node;
+    newNode->k = valueToInsert;
+    newNode->n = NULL;
+    
+    Node *tmp = linkedList->head;
+    
+    // TODO: traverse the list until you find the last node
+    while()
+    {
+        
+    }
+    // TODO: when we find the last node we re-wire it to point to the new node
+    tmp->n = newNode;
+    cout<<"Value Inserted"<<endl;
+    
+}
+
+
+int main()  {
+    
+    
+    LinkedList *linkedList = new LinkedList(5);
+    
+    cout<<linkedList->head->k<<endl;
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ class LinkedList
+ {
+ public:
+ SingleNode *head = new SingleNode();
+ 
+ LinkedList(){};
+ 
+ LinkedList(int value){
+ head->k = value;
+ head->n = NULL;
+ }
+ };
+ */
+/* searchNode
+ * @param - leftValue: value after which we add new node
+ * @param - value: value of the new node to be added
+ */
+
+/*
+ SingleNode * searchNode(LinkedList *linkedList, int value){
+ 
+ SingleNode *tmp = linkedList->head;
+ while(tmp != NULL)
+ {
+ if (tmp->k == value)
+ {
+ cout<<"Found"<<endl;
+ return tmp;
+ }
+ tmp = tmp->n;
+ }
+ cout<<"NOT Found"<<endl;
+ return NULL;
+ }
+ */
+
+/* insertNode
+ * @param - value: value to be searched
+ * cases:
+ *  1) Inserting a node at the head of the list
+ *  2) Inserting a node in the middle of the list
+ *  3) Inserting a node at the end of the list”
+ */
+
+/*
+ 
+ void insertNode(LinkedList *linkedList, int leftValue, int value){
+ 
+ //Create new node with value "value"
+ 
+ 
+ //Search leftValue
+ SingleNode *left = searchNode(linkedList, leftValue);
+ 
+ 
+ //1) Inserting a node at the head of the list
+ if()
+ {
+ 
+ }
+ 
+ //2) Inserting a node in the middle of the list
+ if()
+ {
+ 
+ }
+ 
+ //3) Inserting a node at the end of the list”
+ 
+ if()
+ {
+ 
+ }
+ 
+ 
+ }
+ 
+ 
+ int main(int argc, char *argv[]) {
+ 
+ 
+ LinkedList *linkedList = new LinkedList(5);
+ 
+ searchNode(linkedList, 7);
+ 
+ insertNode(linkedList, 5, 2);
+ 
+ return 0;
+ 
+ 
+ }*/
