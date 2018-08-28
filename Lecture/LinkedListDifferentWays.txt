@@ -1,0 +1,290 @@
+//
+//  linked_list_nullptr.cpp
+//  
+//
+//  Created by Camilla Lambrocco on 6/26/18.
+//
+// -------------------------------------------------------------------------------------
+// The purpose of this file is to show different approcahes when dealing with pointers
+// and see how different compilers deal with types.
+//
+// I will show you how to address different implementations of the same struct
+
+
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+
+
+// I'm setting this as a global to save some time
+string cities[] = {"Los Angeles", "Phoenix", "Denver", "Dallas", "St. Louis", "Chicago", "Atlanta", "Washington, D.C.", "New York", "Boston"};
+
+
+// ------------------ Implementation 1 (ighhh) -------------------//
+
+/* Here we are not initializing anything, all the job needs to be done
+ * whenever we instantiate the new objiect ...... waste of lines of code.
+ */
+
+struct city1
+{
+    string cityName;
+    string message;
+    city1 * next;
+    
+};
+
+// from class (June 25th): blah way (could be done better)
+city1 * buildNetwork1() {
+    
+    int size = sizeof(cities)/sizeof(cities[0]);
+    
+    // only keep going if we have cities to add
+    if (!size)
+        return NULL;
+    
+    city1 *head = new city1;
+    
+    for (int i = 0; i <size; i++) {
+    
+        city1 *n_city = new city1;
+        n_city->cityName = cities[i]; // explicitly set cityName
+        n_city->message = string(); // explicitly set message
+        n_city->next = NULL; // explicitly set next to NULL
+        
+        // lazy way to set head
+        if(i == 0){
+            head = n_city;
+            continue; // go to next iteration
+        }
+        
+        // set what will be the city after which we will add the new node to head
+        city1 *prev_city  = head;
+        
+        while(prev_city->next) {
+            prev_city = prev_city->next;
+        }
+        
+        prev_city->next = n_city;
+    }
+    
+    return head;
+}
+
+
+// cooler way!! Here we don't need to deal with explicit definitions (more flexible with respect
+// different constructors overloads)
+city1 * buildNetwork2() {
+    
+    int size = sizeof(cities)/sizeof(cities[0]);
+    
+    if (!size)
+        return NULL;
+        
+    // define head and assign it to be null as it will be the last
+    city1 * head = NULL;
+    
+    // loop backward so we don't have to traverse the list every time
+    for (int i = (size-1); i >= 0; --i) {
+        
+        city1 *n_city = new city1;
+        n_city->cityName = cities[i]; // explicitly set cityName
+        n_city->message = string(); // explicitly set message
+        n_city->next = head; // attach new node to head from the left
+        
+        head = n_city; //hop the head to its left node
+        }
+    
+    return head;
+
+}
+
+
+
+// ------------------ Implementation 2 (much better) -------------------//
+
+/* Here we are not initializing at definition, however we are imposing it in
+ * the constructor ...... not bad not bad.
+ */
+
+struct city2
+{
+    string cityName;
+    string message;
+    city2 * next;
+
+    // smart default constructor
+    city2()
+    {
+        cityName = string(); // data safe
+        message = string(); // data safe
+        next = NULL;
+    };
+};
+
+
+// Note: here I wannt to show you how this changes with respect the different constructor overloads
+// COMPARE -> buildNetwork3() and buildNetwork1()
+city2 * buildNetwork3() {
+    
+    int size = sizeof(cities)/sizeof(cities[0]);
+    
+    if (!size)
+        return NULL;
+    
+    city2 *head = new city2;
+    
+    for (int i = 0; i <size; i++) {
+        
+        city2 *n_city = new city2;
+        n_city->cityName = cities[i]; // explicitly set cityName
+        
+        // lazy way to set head
+        if(i == 0){
+            head = n_city;
+            continue; // go to next iteration
+        }
+        
+        // set what will be the city after which we will add the new node to head
+        city2 *prev_city  = head;
+        
+        while(prev_city->next) {
+            prev_city = prev_city->next;
+        }
+        
+        prev_city->next = n_city;
+    }
+    
+    return head;
+}
+
+
+
+// ------------------ Implementation 3 (better and flexible) -------------------//
+
+/* Here we ado a lit of magic. Not only we give the possibility to have a smart default
+ * constructor but also we allow the developer to provide the "essence" of the object 
+ * right away
+ */
+
+struct city3
+{
+    string cityName;
+    string message;
+    city3 * next;
+    
+    // smart default constructor
+    city3()
+    {
+        cityName = string(); // data safe
+        message = string(); // data safe
+        next = NULL;
+    };
+    
+    city3(string name, string message,  city3 * nextCity)
+    {
+        cityName = name;
+        message = message;
+        next = nextCity;
+    };
+};
+
+// Note: here I wannt to show you how this changes with respect the different constructor overloads
+// COMPARE -> buildNetwork4(), buildNetwork3(), and buildNetwork1()
+city3 * buildNetwork4() {
+    
+    int size = sizeof(cities)/sizeof(cities[0]);
+    
+    if (!size)
+        return NULL;
+    
+    city3 *head = new city3(cities[0], string(),  NULL);
+    
+    for (int i = 1; i <size; i++) {
+        
+        city3 *n_city = new city3(cities[i], string(),  NULL);
+        
+        // set what will be the city after which we will add the new node to head
+        city3 *prev_city  = head;
+        
+        while(prev_city->next) {
+            prev_city = prev_city->next;
+        }
+        
+        prev_city->next = n_city;
+    }
+    
+    return head;
+}
+
+
+// cooler way!! CHALLENGE: do it in less lines! ;)
+
+// COMPARE -> buildNetwork5() and buildNetwork2()
+city3 * buildNetwork5() {
+    
+    int size = sizeof(cities)/sizeof(cities[0]);
+    
+    if (!size)
+        return NULL;
+    
+    // define head and assign it to be null as it will be the last
+    city3 * head = NULL;
+    
+    // loop backward so we don't have to traverse the list every time
+    for (int i = (size-1); i >= 0; --i) {
+        
+        city3 *n_city = new city3(cities[i], string(),  head);
+        head = n_city; //hop the head to its left node
+    }
+    
+    return head;
+    
+}
+
+
+
+// ---------------------------- MAIN ---------------------------- //
+
+// let's check this out to make sure everything works.
+
+int main(){
+    
+    city1 * head_network = buildNetwork1();
+    
+    // uncomment to test out cooler way
+    //city1 * head_network = buildNetwork2();
+    
+    city1 * node_to_print  = head_network;
+    while(node_to_print) {
+        cout<<node_to_print->cityName<<" -> ";
+        node_to_print = node_to_print->next;
+    }
+    cout<<"NULL"<<endl;
+    
+    // TO DO: print out your network with the other structs implemented and their respective
+    // buildNetwork<_n_>()
+    
+    
+    // ------------------ Implementation 2 (much better) -------------------//
+    
+    
+    //    while(node_to_print) {
+    //        cout<<node_to_print->cityName<<" -> ";
+    //        node_to_print = node_to_print->next;
+    //    }
+    //    cout<<"NULL"<<endl;
+    
+    
+    // ------------------ Implementation 3 (better and flexible) -------------------//
+    
+    //    while(node_to_print) {
+    //        cout<<node_to_print->cityName<<" -> ";
+    //        node_to_print = node_to_print->next;
+    //    }
+    //    cout<<"NULL"<<endl;
+}
+
+
+

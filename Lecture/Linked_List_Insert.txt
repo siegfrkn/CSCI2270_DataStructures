@@ -1,0 +1,72 @@
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+// Define struct for items
+struct Node {
+	int key;
+	Node *next= NULL;
+
+	Node(){};
+	Node(int value){
+		key = value;
+	}
+
+};
+
+int main() {
+	
+	/* Initialize head node to null
+	 * dynamic allocation
+	 */
+
+	Node *head = NULL;
+
+	for (int i =0; i < 5; i++)
+	{
+
+		Node *n = new Node((i+5)*2);
+
+		// If we never set the head, set head node
+		if(head == NULL){
+			head = n;
+		}
+
+		// Else we can go ahead and start setting the links
+		// to the newly created nodes!!! (Do not do my mistake and
+		// create a circular dependency, only after the first iteration
+		// I can go ahead and set the node to point to the next value)
+		else 
+		{
+			Node *tmpNode = head;
+
+			while(tmpNode->next != NULL)
+			{	
+				tmpNode = tmpNode->next;
+			}
+
+			tmpNode->next = n;
+		}
+		
+	}
+
+
+	// Now print the list and make sure we succeded
+	Node *printNode = head;
+	while(printNode != NULL)
+	{
+		cout<<"This is value of current Node: "<<printNode->key<<endl;
+		printNode = printNode->next;
+	}
+
+	//Search node
+
+	//Delete
+
+	//Delete List
+
+	return 0;
+
+}
