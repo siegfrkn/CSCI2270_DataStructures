@@ -1,0 +1,56 @@
+1. Which of the following sorting algorithms uses recursion
+
+Quick Sort
+
+
+2. Tell me about the difference between private and public variable/methods
+
+Public classes can be modified outside of the class; you can access the members from anywhere within the program . Private can't be directly modified, accessed, or viewed outside of the class.
+
+
+3. Which of the sorting algorithms discussed is like the natural way of organizing the cards in your hand? 
+
+Insertion Sort
+
+
+4. What does the output of this code look like?
+
+/*
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+struct node{
+	int data = 0;
+	node *next = NULL;
+};
+
+int main(){
+	node *first = new node;
+	node *second = new node;
+	first -> next = second;
+	second -> data = 2;
+	cout << second -> data << endl;
+	return 0;
+}
+*/
+
+{0,pointer to node} -> {2, NULL}
+
+
+5. Write the code (just the Node struct) for a singly linked list of integers, then put the additional line(s) of code in a comment if we wanted to make it a doubly linked list.
+
+Use the variable names data, prev, and next.
+
+ex:
+struct node{ 
+//everything goes in here
+// //double comment to suggest what goes in a doubly-linked list
+};
+
+struct Node{
+     int key;
+     Node *next = NULL;
+//     Node *previous = NULL;
+};

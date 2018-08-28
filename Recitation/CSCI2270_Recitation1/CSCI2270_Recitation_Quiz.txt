@@ -1,0 +1,68 @@
+1. What does the n in O(f(n)) represent?  (As discussed in recitation... sometimes it changes, but this is our default setting)
+
+The number of steps/instructions the algorithm takes relative to the size of the input 
+
+
+2. Convert 0b0000000000101101 to decimal, please.
+
+45
+
+
+3. Convert 0x412F to decimal, showing/explaining your work.  (Don't just google it.  You won't get the points without showing your brain's process.)
+
+0x412F to decimal
+
+First, convert to binary, where each hex digit is represented by four binary digits...
+
+0100 0001 0010 1111
+
+Next, using the exponential values represented for the binary positions, begin translating to decimal
+
+BIN     0010      0001      0010      1111
+POS    15-12      8-11        7-4         0-3
+EXP      2^14  +  2^8    +   2^5  +  2^3 + 2^2 + 2^1 + 2^0
+
+Add up all of the exponents...
+2^14+2^8+2^5+2^3+2^2+2^1+2^0 = 16687
+
+4. Given 
+
+foo = &myvar;
+
+What is foo?
+
+The address in memory of myVar
+
+
+5. In your own words, tell me the difference between passing something by reference and by value, and given an example of when you would want to do each.
+
+Passing by reference refers to working with whatever is in a specific memory location, whereas passing by value refers to working with whatever the value represented is (C++ default).
+
+For a function f(x,y) = x+y, where x and y are declared variables...
+
+Pass by reference: f(xPtr,yPtr) = x+y, where xPtr and yPtr are pointers to the address location of variables x and y, and the function would dereference those pointers to obtain the values stored at that particular address location. You might want to pass by reference so that the program saves memory and runs faster because the data of the function inputs are not duplicated when called.
+
+Pass by value: f(x,y) = x+y, where the function calls the values associated with a particular variable and there is not concern for where the variable is stored. This is easier and the best time to do this would be for smaller data sets and where runtime and memory consumption are not of foremost concern.
+
+Extra information you totally don't need to know:  The program won't necessarily run faster with PBR- it depends on where in memory the variable is being stored.  In cache or RAM, it'll be a lot faster than if the variable is on disk because of the communication overhead.
+
+
+6. Write the asymptotic notation for f(n) = 100 n^2 + 32 n^2 lg n + 12 lg 2^n + lg (n^2)
+
+Note: lg is log base 2 in Comp Sci
+
+O(n^2 lg n)
+
+
+7. Pointers are friends, not food (or foes).  Tell me why. (Once again, very high level-  I'm more concerned with you understanding the concept.  The syntax will come with practice and Googling- which will come in the classwork.)
+
+Pointers are not edible, though I can't say I've ever tried one.
+
+Pointers are helpful because they allow access to a certain location in memory without duplicating the data of the value being called. For example, each time a variable is called in runtime the data is pulled from that variable and duplicated. This isn't a problem is the variable size is relatively small, but when the size grows, this can result in longer runtimes and can eat up available data. Pointers allow us to tell the computer where the data we need already is, so it isn't duplicated - saving memory space and time.
+
+I teach a microcontroller-based projects course, and one class the entire group was focused on "if you had to eat an electrical component, what would it be any why?"
+
+
+8. By default, C++ is pass by reference or by value (assuming the parameter is not a pointer)?
+
+Value

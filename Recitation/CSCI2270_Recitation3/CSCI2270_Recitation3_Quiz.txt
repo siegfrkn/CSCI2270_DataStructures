@@ -1,0 +1,21 @@
+1. Give an example of when you use a stack in real life (2 pts) and a queue in real life (2 pts).
+
+An example of when we would use a stack in real life would be stacking plates while washing dishes. Assuming you only add a plate or remove a plate one at a time, you will add and remove them only from the top in a first in last out format - the last plate added will be the first to be removed.
+
+An example of when a queue would be used in real life would be a line at the DMV. Unlike a stack, the "ideal" situation at the DMV would give precedence to the order in which people are added to the line. A queue uses first in first out, so the first person to the line will have precedence and be the first out, whereas the last person added will be the last out.
+
+
+2. Which of these is a complete binary tree?
+
+**balanced
+
+
+3. Why is deleting a node from a linked list nontrivial?
+
+Deleting a node from the list is non-trivial because you have to re-link the "downstream" and "upstream" portions of the list that remain. In order to do this effectively, the pointers need to be redirected in a specific order. There are three cases to consider - deleting the head, deleting the tail/end, and deleting the middle, where each case will be handled in a different way.
+
+
+
+4. Is this tree sorted? (i.e. could you perform a search on it as is?)
+
+5. Name the child(ren) of node 4
