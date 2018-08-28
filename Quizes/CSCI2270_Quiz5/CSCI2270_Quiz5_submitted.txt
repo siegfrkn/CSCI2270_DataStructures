@@ -1,0 +1,45 @@
+Write a C++ function to finding maximum repeating element in an array. The function takes 2 arguments - the input array, size of the array. It should return the maximum repeating element in the array.
+
+
+
+int maxRepeatingElement(int arr[],int length);
+
+For example:
+
+Test	Result
+//inputarray[] = {5,5,5,3,3,1,1,3,3,3,1,3,3}
+//length = 13
+3
+
+
+
+
+// For each element in the inputarray, cycle through and
+// count how many times that element appears and store it
+// as count. Compare that number to another storage variable
+// maxRepeat that keeps track of the largest count value as
+// the array is parsed. If the count is larger that the current
+// maximum, make it the new maximum, and store the inputarray
+// index as the maxIndex, which upon completion and parsing
+// will be the max repeated element and will be returned.
+
+int maxRepeatingElement(int inputarray[], int length){
+    int maxRepeat = 0, maxIndex = 0;
+    for (int i=0; i<length; i++){
+        int count = 1;
+        for (int j=i+1; j<length; j++){
+            if (inputarray[i] == inputarray[j]){
+                count++;
+                if (count > maxRepeat){
+                    maxRepeat = count;
+                    maxIndex = inputarray[j];
+                }
+            }
+        }
+    }
+    return maxIndex;
+}
+
+
+// I read there was another way using inputarray[inputarray[i]%k] += k;
+// but I didn't understand it.

@@ -1,0 +1,56 @@
+Implement the Insertion Sort algorithm. Write a function called InsertionSort that takes an array and the length of the array and sorts the items out in increasing order. The function needs to print out the partially sorted array after each iteration of the for loop*.
+
+
+void InsertionSort(int array[], int len);
+
+
+*
+To print out the elements after each iteration of the for loop use the following format:
+
+
+for(int z = 0; z<len; z++)
+
+     cout<<array[z]<< " ";
+
+cout<<"\n";
+
+For example:
+
+Test	Result
+int arr[4] = {2,3,4,1};
+InsertionSort(arr,4);
+2 3 4 1
+2 3 4 1
+1 2 3 4
+
+
+
+
+// The input array is sorted in ascending order, and the partially sorted array
+// is printed after each step
+
+// Pre-Conditions
+// A is an array (in this case, integers)
+
+// Post-Conditions
+// The array is in ascending order
+
+
+/****************************CODE BEGINS HERE**********************************/
+
+void InsertionSort(int array[], int len){
+    for (int i = 1; i<len; i++){
+        int index = array[i];
+        int j=i;
+        while (j>0 && array[j-1]>index) {
+            array[j] = array[j-1];
+            j = j-1;
+        }
+        array[j] = index;
+            for(int z = 0; z<len; z++){
+                cout<<array[z]<< " ";
+                }
+            cout<<"\n";
+    }
+}
+

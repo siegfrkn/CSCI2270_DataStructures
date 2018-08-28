@@ -1,0 +1,256 @@
+1. Fill in the blanks with the correct decimal, hexadecimal and binary representations. Use 16 bit for hex and binary.
+
+
+Decimal
+
+Hexadecimal 
+
+(don't add 0x)
+
+Binary
+
+4	0x0004 	0000000000000100
+43	0x002B	0000000000101011 
+9
+
+0x Answer 1
+0009
+
+Answer 3
+0000000000001001
+
+Answer 5
+2718
+
+0x0A9E
+
+Answer 4
+0000101010011110
+
+Answer 6
+11319
+
+0xAnswer 7
+2C37
+0010110000110111
+
+129
+
+0xAnswer 2
+0081
+
+Answer 9
+0000000010000001
+
+Answer 8
+43981
+
+0xABCD
+
+Answer 10
+1010101111001101
+
+
+ 
+ 2. Given the following algorithm and cost for each line, what is the cost of the code in the for loop (lines 3 and 4) for this array: A = {45, 34, 32, 34, 12, 23, 35}, and v = 45? 
+
+ 
+
+Pseudocode
+
+Cost of each line
+
+findItem(A, v)
+
+0
+
+1.  index = -1
+
+1
+
+2.  for i=0 to A.end
+
+0
+
+3.     if A[i] == v
+
+1
+
+4.       index = i
+
+1
+
+5.  return index
+
+1
+
+
+Answer 1
+8
+
+
+How does the cost change when v = 34?
+
+
+Answer 2
+9
+
+
+
+
+3. In your own words, talk about the difference between Big-O, Big-Omega, and Big-Theta?  (High level- not more than a paragraph.)
+
+Imagine some function f(x) that, at some point beginning at x = k, trends with a function g(x), where it is bounded by c1*g(x) (upper) and c2*g(x) (lower). Where x>=k, the function f(x) can be said to be "Big-Theta" g(x), which means it is within the boundaries mentioned above. The upper bound of c1*g(x) is called the "Big-O" and represents the "worst-case scenario" for the time it will take an algorithm to run. The lower bound of c2*g(x) is called the "Big-Omega".
+
+
+4. In this question we will see how a string can be thought as an array and how this data structure is used to access data/information stored in memory. This is also meant to quickly review few pre-requisites for the class.
+
+Write a function called stripWord(...) that takes two strings, sentence and wordToStrip, and returns a string that is the sentence without the stripped word.
+
+Make sure that you go through the sentence and check every subsentence. The string that you will return should not start or end with a space. Moreover, the function should make sure that the sentence is not empty; if the sentence is empty then it should return "Invalid sentence".
+
+TIPS:
+
+1. You may want to consider keeping track of the index that wordToStrip starts at.
+
+
+
+Note!
+
+This time I want you to code it without using built-in functions.
+
+
+
+Example
+
+string sentence = "Data Structure is awesome";
+string wordToStrip = "Structure";
+string strippedSentence = stripWord(sentence, wordToStrip);
+cout<<strippedSentence<<endl;
+Output
+
+Data is awesome
+
+
+
+
+// Pre-Conditions
+// sentence must be a string
+// wordToStrip must be a string
+// No built-in functions
+
+// Post-Conditions
+// sentence is stripped of wordToStrip
+// The edited sentence is returned
+
+// Algorithm
+/* This function takes in two inputs, the sentence and the word to strip. It then
+   breaks the sentence string into a new array of strings where each index is a
+   word from the original sentence.
+   1. Check to make sure the sentence is valid, i.e. not empty
+   2. Count the number of words
+   3. Creates a new array where each index is a word
+   4. Compare each index to the wordToStrip, if it matches, make it empty
+   5. Print out all indices on same line with appropriate spacing
+   6. Delete dynamically allocated variables
+*/   
+
+
+
+
+/****************************CODE BEGINS HERE**********************************/
+/******************************************************************************/
+
+
+/******************Include standard libraries and namespace********************/
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+/**************************FUNCTION BEGINS HERE********************************/
+
+
+string stripWord(string sentence, string wordToStrip)
+{
+
+
+/**************Make sure the sentence is valid, i.e. not empty*****************/
+    
+    if (sentence == ""){
+        cout << "Invalid sentence" << endl;
+    }
+
+
+/************* Count the number of words by counting the spaces ***************/
+    
+    int spaces = 0;
+    string characterIndex;
+    int letterCount = 0;
+    for (int n=0; sentence[n] != '\0'; n++){
+    	characterIndex = sentence[n];
+    	letterCount++;
+    	if (characterIndex == " "){
+    		spaces++;
+    	}
+    }
+    
+    int wordCount = spaces+1; // the number of words is one more than the number of spaces
+
+
+/******Create a new sentence array of strings and fill it with each word*******/
+    
+    string * newSentence = new string[wordCount]; // size dependent on input so dynamically allocate newSentence
+    int i = 0; // iterate through the letters
+    int j = 0; // iterate through the words
+    string sentenceCharacter; // to hold the index value from the original sentence
+    
+    // iterate over each letter, when there is a space, jump to the next index in newSentence
+    for (i=0,j=0; i<letterCount && j<wordCount;){
+        sentenceCharacter = sentence[i];
+        
+        if (sentenceCharacter == " "){
+            //newSentence[j] = newSentence[j];
+            //i++; // go to the next letter
+            j = j+1;
+            i++;
+        }
+        
+        else{
+            newSentence[j] = newSentence[j] + sentence[i];
+            //newSentence[j] = sentence[j];
+            j=j;
+            i++;
+        }
+    }
+    
+    
+/*******Compare the words in the array newSentence to the wordToStrip*********/
+    
+    int m=0;
+    for (m=0; m<wordCount; m++){
+        // if the wordToStrip is found, make the index blank
+        if (newSentence[m] == wordToStrip){
+            newSentence[m] = "";
+        }
+    }
+    
+
+/********************************Print it out*********************************/
+    
+    int k = 0;
+    // print each word then a space
+	for (k=0; k<wordCount-1; k++){
+	    if (newSentence[k] == ""){
+	        k++;
+	    }
+	    cout<<newSentence[k] << " ";
+	}
+	cout<<newSentence[wordCount-1]; // print the last word/index by itself so you don't print the space after
+
+	delete [] newSentence; // clean up the memory space because newSentence was dynamically allocated
+	return ""; // needs to return something
+}

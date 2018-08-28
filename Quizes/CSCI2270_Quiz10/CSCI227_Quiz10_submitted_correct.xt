@@ -1,0 +1,40 @@
+Write a function addCity() that will be used to construct a network. New cities will then be added using your function, to various positions of the network.
+
+Note: (Don't forget to handle the cases when *head and/or *previous are passed as 'NULL' pointers)
+
+Your answer should look like:
+
+city *addCity(city *head, city *previous, string cityName)
+{
+    // Your code here //
+}
+
+
+
+// add city after previous city, return head
+city *addCity(city *head, city *previous, string cityName){
+    
+    city *newCity = new city;
+    
+    if (head == nullptr){
+        newCity -> next = head;
+        newCity -> cityName = cityName;
+        head = newCity;
+        return head;
+    }
+    
+    if (previous ==  nullptr){
+        //cout << "previous is null" << endl;
+        newCity -> cityName = cityName;
+        newCity -> next = head; // point to the start of the list
+        head = newCity; // add an elemnt to the start of the list
+        return head;
+    }
+    
+    newCity -> next = previous -> next;
+    newCity -> cityName = cityName;
+    previous -> next = newCity;
+    
+    return head;
+}
+

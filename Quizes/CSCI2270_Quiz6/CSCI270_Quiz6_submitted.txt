@@ -1,0 +1,57 @@
+Write a function called findMax that prints the maximum value in a linked list. 
+
+To achieve this you will have to rely on the struct Node and class LinkedList defined below.
+
+struct Node{
+   int key;
+   Node *next;
+   Node *previous;
+   Node(int k, Node *n, Node *p){
+       key = k;
+       next = n;
+       previous = p;
+   }
+};
+
+
+class LinkedList{
+  private:
+      Node *head;
+      Node *search(int value);
+  public:
+      LinkedList(){head = NULL;};
+      void addNode(int value, int newVal);
+      void printList()
+      void findMax();
+};
+
+
+You only have to implement findMax(...) as search(...), addNode(..), and printList(...) are already implemented for you in the backend. 
+
+Note: the function header should be
+
+void findMax()
+
+            not
+
+void LinkedList::findMax()
+
+
+
+
+
+
+void findMax() {
+    
+    struct Node *currentNode = head;
+    int max = 0;
+    
+    while (currentNode != NULL){
+        if (currentNode == head || max < currentNode -> key){
+            max = currentNode -> key;
+        }
+        currentNode = currentNode ->next;
+    }
+    cout << max << endl;
+}
+
