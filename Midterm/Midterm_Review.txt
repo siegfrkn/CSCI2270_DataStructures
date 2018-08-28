@@ -1,0 +1,255 @@
+9. Using the following code for an empty array-based queue (assume the front index does not get reset when empty), complete the questions below:
+
+Enqueue(12)
+Enqueue(6)
+Dequeue( )
+Dequeue( )
+Enqueue(10)
+Dequeue( )
+Enqueue(15)
+Enqueue(21)
+
+What value does the First dequeue remove from the queue?
+12
+
+What value does the Second dequeue remove from the queue?
+6
+
+What value does the Third dequeue remove from the queue?
+10
+
+Display the final values in the queue: if there isn't a number in one of the positions, put in a -1. 
+
+For example, if there's nothing in Q[i], Q[i] = -1
+
+0	1	2	3	4	5
+-1	-1	-1	15	21	-1
+
+
+8. Using the following code for an empty array-based queue, complete the questions below:
+
+Enqueue(5)
+Enqueue(3)
+Dequeue( )
+Enqueue(12)
+Enqueue(9)
+Dequeue( ) 
+Dequeue( )
+Enqueue(11)
+Enqueue(17)
+Dequeue() 
+
+What value does the First dequeue remove from the queue?
+5
+
+What value does the Second dequeue remove from the queue?
+3
+
+What value does the Third dequeue remove from the queue?
+12
+
+What value does the Forth dequeue remove from the queue?
+9
+
+Display the final values in the queue: if there isn't a number in one of the positions, put in a -1. 
+
+For example, if there's nothing in Q[i], Q[i] = -1
+
+0	1	2	3	4	5
+-1	-1	-1	-1	11	17
+
+
+7. Consider following structure of node and doubly linked list,
+
+struct Node {
+Node *prev;
+int key;
+Node *next;
+}
+
+3	7	10	5	12
+Doubly Linked List
+
+Consider head points to first node in the linked list, tail points to last node, temp points to the node with value 10 and we are trying to insert new node (newnode) with value 15 immediately after temp. 
+
+After executing following pseudo-code.
+
+temp->next = newnode;
+newnode->next = temp->next;
+newnode->prev = temp;
+temp->next->prev = newnode;
+
+what will be the output if we print the linked list from head to tail.
+
+Inifinite Loop
+
+
+6. Consider the following structure of node and linked list.
+
+struct Node {
+int key;
+Node *next;
+};
+
+10 -> 20 -> 30 -> 40 -> 60 -> 70 -> NULL
+
+What will be the output of the following pseudo-code? The variable head is the pointer to the first node in the above linked list.
+
+Node *tmp = head;
+while(tmp != NULL){
+        if(tmp->key == 50) {
+                 cout << tmp->key << endl;
+                 break;
+         }
+         tmp = tmp->next;
+}
+cout << tmp->key << endl;
+
+Segmentation fault
+
+
+5. Write a C++ function to copy all elements of an array to a new array, except for a specified value, and return the new array. 
+
+Use the following function header:
+int *CopyArray(int array[], int length, int value)
+
+For example, copy all elements except the value 3 from an array A to array B.
+
+        Array A = {1,2,3,4}
+        Value = 3
+        Array B = {1,2,4}
+
+int *CopyArray(int array[], int length, int value){
+    int *ArrayB = new int[length];
+    int isFound = 0;
+    for (int i=0; i< length; i++){
+        if (array[i] == value){
+            isFound++;
+            length = length - 1;
+        }
+        if (array[i+isFound] != value){
+            ArrayB[i] = array[i+isFound];
+        }
+        else{
+            ArrayB[i] = array[i+isFound+1];
+        }
+    }
+//    cout << isFound << endl;
+    return ArrayB;
+}
+
+
+4. Write a function to return the value at nth position in a linked list. Start indexing at zero. Function takes two arguments, the linked list head and the position searched for and returns the value at that position. Returns -1 if the position is not found.
+
+int LinkedListNthNode(node *head, int position);
+
+The linked list structure:
+
+struct node
+{
+    int value;
+    node *next;
+};
+
+For example:
+Test
+//1 -> 2 -> 3 -> 4 -> 5
+//position = 1
+Result = 2
+
+int LinkedListNthNode(node *head, int position){
+ node *tmp= new node;
+ tmp = head;
+ for (int i=0; i<position; i++){
+    tmp = tmp -> next;
+    if (tmp -> next == NULL){
+        return -1;
+    }
+ }
+    int returnVal = tmp -> value;
+    return returnVal;
+}
+
+
+
+3. Write a function that searches an array of structs and increments an item counter if the name of the student in the struct matches with the given argument 'sname' and his marks in the struct is greater than the given argument 'marks'. Return the item counter.
+
+struct Student
+{
+ string name;
+ int marks;
+}
+
+Use the following function header:
+
+int searchStruct(Student *StudentArray,string sname,int marks,int size);
+
+int searchStruct(Student *StudentArray,string sname,int marks,int size){
+    bool isFound = false;
+    int counter = size;
+    for (int i=0; i<size; i++){
+        if (StudentArray[i].name == sname && StudentArray[i].marks > marks){
+            isFound = true;
+            counter++;
+        }
+        counter--;;
+    }
+    if (isFound == false){
+        counter = 0;
+    }
+    return counter;
+}
+
+
+2. Write a C++ function to remove an element from an array, shifts the array to fill the empty spot and prints the new array. The function takes three arguments - the input array, length of the array, and the value to be removed from the array. The expected function prototype is:
+
+void arrayShift(int arr[],int length,int value);
+
+For the following inputs:
+int inputArray[5] = {10, 20, 30, 40, 50};
+int length = 5;
+int value = 30;
+the expected result is an array that contains:
+ < 10 20 40 50 >
+
+ void arrayShift(int arr[],int length,int value){
+    for (int i=0; i<length; i++){
+        if (arr[i] == value){   
+            for (int j=i; j<length; j++){
+                arr[j] = arr[j+1];
+            }
+            length = length-1;
+            break;
+        }
+    }   
+    for (int k=0; k<length; k++){
+        cout << arr[k] << " ";
+    }
+}
+
+
+1. Write a C++ function called populateStruct that takes two arrays of values of the same length and generates a dynamically allocated array of structs to store the specified values. Return a pointer to a dynamically allocated array of structs.
+
+struct TwoArray
+{
+    string a1;
+    int a2;
+};
+
+TwoArray* populateStruct(string Arr1[], int Arr2[], int size);
+
+Note: 
+string arr1[] = {"chicken","bike","truck"};
+int arr2[] = {14,50,1600};
+
+You should return a pointer to an array of structs that contains { {"chicken",14}, {"bike",50}, {"truck",1600} }
+
+TwoArray* populateStruct(string Arr[], int Arr2[], int size){
+
+TwoArray *returnArray = new TwoArray[size];
+    for (int i=0; i<size; i++){
+        returnArray[i].a1 = Arr[i];
+        returnArray[i].a2 = Arr2[i];
+    }
+    return returnArray;
+}
